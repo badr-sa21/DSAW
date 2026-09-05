@@ -1,0 +1,7 @@
+WireScope Native v2.3 build fix
+
+Fixes GitHub Actions/MSVC errors:
+- GDI+ IUnknown / IStream errors by explicitly including ObjIdl.h before gdiplus.h.
+- std::max type mismatch in PaintWindowBackground by casting RECT::right to int.
+
+Upload/replace the project in GitHub, then run Build WireScope Native again.
